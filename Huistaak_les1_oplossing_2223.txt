@@ -1,0 +1,30 @@
+SRP1
+
+Bestudeer het project in de SRP-opgave folder. Beantwoord de volgende vragen in een aparte textfile of commentaar van de code.
+•	Wat doet dit project? Welke functionaliteiten/responsabilities heeft het? Maak er een lijst van.
+- Op een rekening kan een bedrag gestort.
+- Van een rekening met voldoende geld kan een bedrag worden afgetrokken.
+- De data van de rekeningen kunnen afgeprint worden.
+- Op de bankrekeningen worden enkele verrichtingen gedaan.
+- Rekening toevoegen.
+
+•	Welke data wordt er bijgehouden? Wat stelt deze data voor?
+- Bankrekening: nummer, naam, balans
+- Lijst bankrekeningen
+
+Deze code is een ramp: 1 class is verantwoordelijk voor alles.
+•	Wat kan er verbeterd worden? Voor elke functionaliteit/responsability of data op je lijsten bepaal je welke class of method hiervoor verantwoordelijk is.
+- Bankrekening: nummer, naam, balans 
+	=> 1 Bankrekening voorstellen: class BankAccount. 
+- Alle rekeningen bijhouden: class Bank
+- Op een rekening kan een bedrag gestort.
+	=> Bank.storten(nummer,bedrag)  
+- Van een rekening met voldoende geld kan een bedrag worden afgetrokken.
+	=> Bank.afhalen(nummer,bedrag)
+- De data van de rekeningen kunnen afgeprint worden.
+	=> Bank.printRkeningen
+- Op de bankrekeningen worden enkele verrichtingen gedaan.
+	=> Applicatie/Main class
+- Rekening toevoegen
+	=> Bank.voegAccountToe
+•	Pas daarna op basis van het vorige punt in het project de code aan.
